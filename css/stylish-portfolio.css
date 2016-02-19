@@ -384,6 +384,17 @@ hr.small {
   height: 150px;
 }
 
+.tracks {
+  list-style: none;
+}
+
+.music-blurb {
+  width: 50%;
+  font-size: 18px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
 /* Call to Action */
 
 .call-to-action {

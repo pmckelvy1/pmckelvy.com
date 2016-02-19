@@ -43,16 +43,19 @@
                 <a href="#top"  onclick = $("#menu-close").click(); >Patrick McKelvy</a>
             </li>
             <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Projects</a>
+                <a href="#about" onclick = $("#menu-close").click(); >About</a>
             </li>
             <li>
-                <a href="#about" onclick = $("#menu-close").click(); >Education</a>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >Projects</a>
             </li>
             <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Skills</a>
+                <a href="#skills" onclick = $("#menu-close").click(); >Skills</a>
             </li>
             <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Music</a>
+                <a href="#education" onclick = $("#menu-close").click(); >Education</a>
+            </li>
+            <li>
+                <a href="#music" onclick = $("#menu-close").click(); >Music</a>
             </li>
             <li>
                 <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
@@ -110,7 +113,7 @@
                               <p class="info">
                                 CloudSounds is a music sharing and discovery platform based on the popular website SoundCloud.com, built on Ruby on Rails and React.js with Flux.  Users can create and customize a profile, upload and share their music, search for and follow other users, create playlists, and like and comment on music they find across the site.
                               </p>
-                                <a href="http://www.cloudsounds.xyz">
+                                <a target="_blank" href="http://www.cloudsounds.xyz">
                                     <img class="img-portfolio img-responsive" src="img/user-prof-ss.jpg">
                                 </a>
                             </div>
@@ -128,7 +131,7 @@
                               <p class="info">
                                 PartyTetris is a an exciting take on the classic arcade game, built using HTML, CSS, and Javascript with jQueryLite.  The logic of PartyTetris is handled in javascript.  The styling is designed in CSS, and rendered in javascript using the jQueryLite library.  The color-wheel styling is a custom javascript algorithm built to cycle through a specific set of colors continuously, and attach to a block when it is dropped.
                               </p>
-                                <a href="http://pmckelvy1.github.io/PartyTetris/">
+                                <a target="_blank" href="http://pmckelvy1.github.io/PartyTetris/">
                                     <img class="img-portfolio img-responsive" src="img/party-tetris-screenshot.jpg">
                                 </a>
                             </div>
@@ -146,7 +149,7 @@
                               <p class="info">
                                 JQueryLite is a custom implementation of the popular javascript library jQuery. It contains many of the core features of jQuery, and is fully useable for simple DOM manipulation via the '$l' syntax.
                               </p>
-                                <a href="http://github.com/pmckelvy1/jQueryLite">
+                                <a target="_blank" href="http://github.com/pmckelvy1/jQueryLite">
                                     <img class="img-portfolio img-responsive" src="img/jQuery-lite-screenshot.jpg">
                                 </a>
                             </div>
@@ -164,7 +167,7 @@
                               <p class="info">
                                 This Ruby implementation of the classic strategy game can be played in a linux terminal by cloning the github repo to your computer and running 'ruby chess_game.rb' from inside the directory.  The logic for this game is built with an object-oriented design pattern in mind and uses a custom move-tree algorithm to validate moves and check/check-mate situations on a piece-by-piece basis.
                               </p>
-                                <a href="http://github.com/pmckelvy1/chess">
+                                <a target="_blank" href="http://github.com/pmckelvy1/chess">
                                     <img class="img-portfolio img-responsive" src="img/chess-screenshot.jpg">
                                 </a>
                             </div>
@@ -181,7 +184,7 @@
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary bg-black">
+    <section id="skills" class="services bg-primary bg-black">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
@@ -300,7 +303,7 @@
         <!-- /.container -->
     </section>
 
-    <section id="portfolio" class="portfolio">
+    <section id="education" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
@@ -339,6 +342,26 @@
                     <!-- /.row (nested) -->
                 </div>
                 <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section id="music" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2></h2>
+                    <p class="music-blurb">
+                      Do you enjoy good music?  Patrick is a music producer and mix engineer, and when he isn't designing and building slick web apps, he is producing pop, electronic, and hip-hop music for a variety of acts.  Checkout some of his tracks below!
+                    </p>
+                    <ul class="tracks">
+                    <li class="track"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189283535&amp;color=5e50de&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></li>
+                    <li class="track"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/200701911&amp;color=5e50de&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></li>
+                    <li class="track"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/243410808&amp;color=5e50de&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></li>
+                  </ul>
+                </div>
             </div>
             <!-- /.row -->
         </div>
