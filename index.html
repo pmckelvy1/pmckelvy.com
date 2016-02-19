@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Patrick McKelvy</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='css/devicons.css' rel='stylesheet'>
+    <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >Patrick McKelvy</a>
+            </li>
+            <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Projects</a>
+            </li>
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >Education</a>
+            </li>
+            <li>
+                <a href="#services" onclick = $("#menu-close").click(); >Skills</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >Music</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <div class="header-box">
+      <!-- <img src="img/code3.jpg" class="header-img"/> -->
+      <header id="top" class="header">
+        <div class="text-vertical-center">
+          <h1>Patrick McKelvy</h1>
+          <h3>Web Software Developer Extraordinaire</h3>
+          <br>
+          <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        </div>
+      </header>
+    </div>
+
+    <img src="img/bg-black.jpg" class="bg-black-img"/>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2></h2>
+                    <p class="lead">Patrick McKelvy is a software developer, specializing in RESTful web applications.  He has experience designing and implementing sleek user interfaces with with HTML, CSS and Javascript, and robust backend databases using Ruby on Rails.  Have a look at his skillset and accomplishments below!</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Projects</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-12 project">
+                            <div class="portfolio-item">
+                              <div class="project-title">
+                                CloudSounds
+                                <div class="github-link">
+                                  <a target="_blank" href="https://github.com/pmckelvy1/CloudSounds">
+                                    <span class="devicons devicons-github_badge"></span>
+                                  </a>
+                                </div>
+                              </div>
+                              <p class="info">
+                                CloudSounds is a music sharing and discovery platform based on the popular website SoundCloud.com, built on Ruby on Rails and React.js with Flux.  Users can create and customize a profile, upload and share their music, search for and follow other users, create playlists, and like and comment on music they find across the site.
+                              </p>
+                                <a href="http://www.cloudsounds.xyz">
+                                    <img class="img-portfolio img-responsive" src="img/user-prof-ss.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 project">
+                            <div class="portfolio-item">
+                              <div class="project-title">
+                                PartyTetris
+                                <div class="github-link">
+                                  <a target="_blank" href="https://github.com/pmckelvy1/PartyTetris">
+                                    <span class="devicons devicons-github_badge"></span>
+                                  </a>
+                                </div>
+                              </div>
+                              <p class="info">
+                                PartyTetris is a an exciting take on the classic arcade game, built using HTML, CSS, and Javascript with jQueryLite.  The logic of PartyTetris is handled in javascript.  The styling is designed in CSS, and rendered in javascript using the jQueryLite library.  The color-wheel styling is a custom javascript algorithm built to cycle through a specific set of colors continuously, and attach to a block when it is dropped.
+                              </p>
+                                <a href="http://pmckelvy1.github.io/PartyTetris/">
+                                    <img class="img-portfolio img-responsive" src="img/party-tetris-screenshot.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 project">
+                            <div class="portfolio-item">
+                              <div class="project-title">
+                                jQueryLite
+                                <div class="github-link">
+                                  <a target="_blank" href="https://github.com/pmckelvy1/jQueryLite">
+                                    <span class="devicons devicons-github_badge"></span>
+                                  </a>
+                                </div>
+                              </div>
+                              <p class="info">
+                                JQueryLite is a custom implementation of the popular javascript library jQuery. It contains many of the core features of jQuery, and is fully useable for simple DOM manipulation via the '$l' syntax.
+                              </p>
+                                <a href="http://github.com/pmckelvy1/jQueryLite">
+                                    <img class="img-portfolio img-responsive" src="img/jQuery-lite-screenshot.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 project">
+                            <div class="portfolio-item">
+                              <div class="project-title">
+                                Chess
+                                <div class="github-link">
+                                  <a target="_blank" href="https://github.com/pmckelvy1/chess">
+                                    <span class="devicons devicons-github_badge"></span>
+                                  </a>
+                                </div>
+                              </div>
+                              <p class="info">
+                                This Ruby implementation of the classic strategy game can be played in a linux terminal by cloning the github repo to your computer and running 'ruby chess_game.rb' from inside the directory.  The logic for this game is built with an object-oriented design pattern in mind and uses a custom move-tree algorithm to validate moves and check/check-mate situations on a piece-by-piece basis.
+                              </p>
+                                <a href="http://github.com/pmckelvy1/chess">
+                                    <img class="img-portfolio img-responsive" src="img/chess-screenshot.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary bg-black">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Skills</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="icon devicons devicons-ruby"></span>
+                                <h4>
+                                    <strong>Ruby</strong>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="icon devicons devicons-ruby_on_rails"></span>
+                                <h4>
+                                    <strong>Rails</strong>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="icon devicons devicons-postgresql"></span>
+                                <h4>
+                                    <strong>Postgres</strong>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="icon devicons devicons-aws"></span>
+                                <h4>
+                                    <strong>AWS</strong>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="icon devicons devicons-javascript"></span>
+                                <h4>
+                                    <strong>JavaScript</strong>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="icon devicons devicons-jquery"></span>
+                                <h4>
+                                    <strong>jQuery</strong>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="icon devicons devicons-react"></span>
+                                <h4>
+                                    <strong>React</strong>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="icon devicons devicons-nodejs_small"></span>
+                                <h4>
+                                    <strong>Node.js</strong>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="icon devicons devicons-html5"></span>
+                                <h4>
+                                    <strong>HTML5</strong>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="icon devicons devicons-css3"></span>
+                                <h4>
+                                    <strong>CSS3</strong>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="icon devicons devicons-github_badge"></span>
+                                <h4>
+                                    <strong>Git</strong>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="icon devicons devicons-heroku"></span>
+                                <h4>
+                                    <strong>Heroku</strong>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Education</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-12 project">
+                            <div class="portfolio-item">
+                              <div class="school-title">
+                                App Academy
+                              </div>
+                              <ul class="school-info">
+                                <li>Immersive web-development bootcamp</li>
+                                <li>&lt;3% acceptance rate</li>
+                                <li>In-depth study of underlying frameworks and libraries</li>
+                                <li>Focus on how to be a developer, not just how to program</li>
+                              </ul>
+                              <img class="img-education" src="img/aa-logo.png">
+                            </div>
+                        </div>
+                        <div class="col-md-12 project">
+                            <div class="portfolio-item">
+                              <div class="school-title">
+                                Tufts University
+                              </div>
+                              <ul class="school-info">
+                                <li><span class="bold">Degree:</span> BS Electrical Engineering</li>
+                                <li><span class="bold">Concentration:</span> Renewable &amp; Sustainable Energy Systems</li>
+                                <li><span class="bold">GPA:</span> 3.23</li>
+                                <li><span class="bold">Honors:</span> Cum Laude</li>
+                              </ul>
+                              <img class="img-education" src="img/Tufts_University_seal.svg.png">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="#" class="btn btn-lg btn-light">Patrick's Resume</a>
+                    <h3>Feel free to send Patrick an email!</h3>
+                </div>
+                <div class="col-lg-12 text-center">
+                  <form class="email-form" action="http://formspree.io/pmckelvy1@gmail.com"
+                        method="POST">
+                        <input type="email" name="_replyto" placeholder="Your email">
+                      <textarea name="message" placeholder="Write Patrick a message!"></textarea>
+                      <input type="submit" value="Send">
+                  </form>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Patrick McKelvy</strong>
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (301) 512-4719</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:pmckelvy1@gmail.com">pmckelvy1@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/patrick-mckelvy-647b1825"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Patrick McKelvy 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
