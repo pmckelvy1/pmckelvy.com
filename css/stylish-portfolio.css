@@ -331,6 +331,11 @@ hr.small {
   display: block;
   margin: auto;
   margin-bottom: 20px;
+  text-align: left;
+}
+
+.blue {
+  color: rgb(91, 151, 255);
 }
 
 .img-portfolio {
