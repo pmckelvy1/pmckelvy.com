@@ -17,6 +17,7 @@ body {
     background: black;
 }
 
+
 .bg-black-img {
   display: block;
   position: fixed;
@@ -384,10 +385,15 @@ hr.small {
   margin:auto;
   margin-bottom: 10px;
   width: 300px;
+  padding: 10px;
 }
 
 .email-form textarea {
   height: 150px;
+}
+
+.submit-button {
+  border-radius: 20px !important;
 }
 
 .tracks {
