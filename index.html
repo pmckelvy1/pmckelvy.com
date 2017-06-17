@@ -97,7 +97,7 @@
                     <div id="highlights">
                         <div id="highlight-1" class="fa fa-circle"><div class="inner-text"><div class="text-cell">Sleek UI's</div></div></div>
                         <div id="highlight-2" class="fa fa-circle"><div class="inner-text"><div class="text-cell">Robust Backend Infrastructure</div></div></div>
-                        <div id="highlight-3" class="fa fa-circle"><div class="inner-text"><div class="text-cell">Machine Learning (coming soon...)</div></div></div>
+                        <div id="highlight-3" class="fa fa-circle"><div class="inner-text"><div class="text-cell">Machine Learning</div></div></div>
                     </div>
                 </div>
                 <div class="col-xs-2"></div>
@@ -130,7 +130,7 @@
                               <p class="info">
                                 CloudSounds is a music sharing and discovery platform based on the popular website SoundCloud.com, built on Ruby on Rails and React with Flux.  Users can create and customize a profile, upload and share their music, search for and follow other users, create playlists, and like and comment on music they find across the site.
                               </p>
-                                <a target="_blank" href="http://www.cloudsounds.cloud">
+                                <a class="project-img" target="_blank" href="http://www.cloudsounds.cloud">
                                   <img class="img-portfolio img-responsive" src="img/user-prof-ss.jpg">
                                 </a>
                             </div>
@@ -150,7 +150,7 @@
                               <p class="info">
                                 PartyTetris is a an exciting take on the classic arcade game, built using HTML, CSS, and Javascript with jQueryLite.  The logic of PartyTetris is handled in javascript.  The styling is designed in CSS, and rendered in javascript using the jQueryLite library.  The color-wheel styling is a custom javascript algorithm built to cycle through a specific set of colors continuously, and attach to a block when it is dropped.
                               </p>
-                                <a target="_blank" href="http://pmckelvy1.github.io/PartyTetris/">
+                                <a class="project-img" target="_blank" href="http://pmckelvy1.github.io/PartyTetris/">
                                     <img class="img-portfolio img-responsive" src="img/party-tetris-screenshot.jpg">
                                 </a>
                             </div>
@@ -170,7 +170,7 @@
                               <p class="info">
                                 JQueryLite is a custom implementation of the popular javascript library jQuery. It contains many of the core features of jQuery, and is fully useable for simple DOM manipulation via the '$l' syntax.
                               </p>
-                                <a target="_blank" href="http://github.com/pmckelvy1/jQueryLite">
+                                <a class="project-img" target="_blank" href="http://github.com/pmckelvy1/jQueryLite">
                                     <img class="img-portfolio img-responsive" src="img/jQuery-lite-screenshot.jpg">
                                 </a>
                             </div>
@@ -190,7 +190,7 @@
                               <p class="info">
                                 This Ruby implementation of the classic strategy game can be played in a linux terminal by cloning the github repo to your computer and running 'ruby chess_game.rb' from inside the directory.  The logic for this game is built with an object-oriented design pattern in mind and uses a custom move-tree algorithm to validate moves and check/check-mate situations on a piece-by-piece basis.
                               </p>
-                                <a target="_blank" href="http://github.com/pmckelvy1/chess">
+                                <a class="project-img" target="_blank" href="http://github.com/pmckelvy1/chess">
                                     <img class="img-portfolio img-responsive" src="img/chess-screenshot.jpg">
                                 </a>
                             </div>
@@ -207,116 +207,96 @@
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="skills" class="services bg-primary bg-black">
+    <section class="services bg-primary bg-black">
         <div class="container">
             <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Skills</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="icon devicons devicons-ruby"></span>
-                                <h4>
-                                    <strong>Ruby</strong>
-                                </h4>
-                            </div>
+                <div id="skills-target" class="col-xs-10 col-xs-offset-1">
+                    <div>
+                        <h2>Skills</h2>
+                        <hr class="small">
+                    </div>
+                    <div class="skills skills-container">
+                    <div id="skills-row-top" class="row skills-row">
+                        <div class="col-md-3 col-sm-6 service-item left">
+                            <span class="icon devicons devicons-ruby"></span>
+                            <h4>
+                                <strong>Ruby</strong>
+                            </h4>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="icon devicons devicons-ruby_on_rails"></span>
-                                <h4>
-                                    <strong>Rails</strong>
-                                </h4>
-                            </div>
+                        <div class="col-md-3 col-sm-6 service-item left-mid">
+                            <span class="icon devicons devicons-ruby_on_rails"></span>
+                            <h4>
+                                <strong>Rails</strong>
+                            </h4>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="icon devicons devicons-python"></span>
-                                <h4>
-                                    <strong>Python</strong>
-                                </h4>
-                            </div>
+                        <div class="col-md-3 col-sm-6 service-item right-mid">
+                            <span class="icon devicons devicons-python"></span>
+                            <h4>
+                                <strong>Python</strong>
+                            </h4>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="icon devicons devicons-aws"></span>
-                                <h4>
-                                    <strong>AWS</strong>
-                                </h4>
-                            </div>
+                        <div class="col-md-3 col-sm-6 service-item right">
+                            <span class="icon devicons devicons-aws"></span>
+                            <h4>
+                                <strong>AWS</strong>
+                            </h4>
                         </div>
                     </div>
                     <!-- /.row (nested) -->
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="icon devicons devicons-javascript"></span>
-                                <h4>
-                                    <strong>JavaScript</strong>
-                                </h4>
-                            </div>
+                    <div id="skills-row-mid" class="row skills-row">
+                        <div class=" col-md-3 col-sm-6 service-item left">
+                            <span class="icon devicons devicons-javascript"></span>
+                            <h4>
+                                <strong>JavaScript</strong>
+                            </h4>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="icon devicon-jasmine-plain"></span>
-                                <h4>
-                                    <strong>Jasmine</strong>
-                                </h4>
-                            </div>
+                        <div class="col-md-3 col-sm-6 service-item left-mid">
+                            <span class="icon devicon-jasmine-plain"></span>
+                            <h4>
+                                <strong>Jasmine</strong>
+                            </h4>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="icon devicons devicons-react"></span>
-                                <h4>
-                                    <strong>React</strong>
-                                </h4>
-                            </div>
+                        <div class="col-md-3 col-sm-6 service-item right-mid">
+                            <span class="icon devicons devicons-react"></span>
+                            <h4>
+                                <strong>React</strong>
+                            </h4>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="icon devicons devicons-nodejs_small"></span>
-                                <h4>
-                                    <strong>Node.js</strong>
-                                </h4>
-                            </div>
+                        <div class="col-md-3 col-sm-6 service-item right">
+                            <span class="icon devicons devicons-nodejs_small"></span>
+                            <h4>
+                                <strong>Node.js</strong>
+                            </h4>
                         </div>
                     </div>
                     <!-- /.row (nested) -->
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="icon devicons devicons-html5"></span>
-                                <h4>
-                                    <strong>HTML5</strong>
-                                </h4>
-                            </div>
+                    <div id="skills-row-bot" class="row skills-row">
+                        <div class="col-md-3 col-sm-6 service-item left">
+                            <span class="icon devicons devicons-html5"></span>
+                            <h4>
+                                <strong>HTML5</strong>
+                            </h4>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="icon devicons devicons-css3"></span>
-                                <h4>
-                                    <strong>CSS3</strong>
-                                </h4>
-                            </div>
+                        <div class="col-md-3 col-sm-6 service-item left-mid">
+                            <span class="icon devicons devicons-css3"></span>
+                            <h4>
+                                <strong>CSS3</strong>
+                            </h4>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="icon devicon-cplusplus-plain"></span>
-                                <h4>
-                                    <strong>C++</strong>
-                                </h4>
-                            </div>
+                        <div class="col-md-3 col-sm-6 service-item right-mid">
+                            <span class="icon devicon-cplusplus-plain"></span>
+                            <h4>
+                                <strong>C++</strong>
+                            </h4>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="icon devicons devicons-postgresql"></span>
-                                <h4>
-                                    <strong>Postgres</strong>
-                                </h4>
-                            </div>
+                        <div class="col-md-3 col-sm-6 service-item right">
+                            <span class="icon devicons devicons-postgresql"></span>
+                            <h4>
+                                <strong>Postgres</strong>
+                            </h4>
                         </div>
                     </div>
+                </div>
                     <!-- /.row (nested) -->
                 </div>
                 <!-- /.col-lg-10 -->
@@ -400,7 +380,8 @@
                     <ul class="tracks">
                     <li class="track"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/200701911&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></li>
                     <li class="track"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/282668827&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></li>
-                    <li class="track"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/321199843&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></li>
+                    <!-- <li class="track"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/321199843&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></li> -->
+                    <iframe src="https://open.spotify.com/embed/track/06b7DBWjiJhQtMNp7HWS87" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
                   </ul>
                 </div>
             </div>
@@ -420,7 +401,7 @@
                   <form class="email-form" action="http://formspree.io/pmckelvy1@gmail.com"
                         method="POST">
                         <input type="email" name="_replyto" placeholder="Your email">
-                      <textarea name="message" placeholder="Write Patrick a message!"></textarea>
+                      <textarea name="message" placeholder="Business, employment, music, or just to chat..."></textarea>
                       <input class="submit-button" type="submit" value="Send">
                   </form>
                 </div>
@@ -492,13 +473,40 @@
             }
         });
 
-        var controller = new ScrollMagic.Controller();
-        var tween = TweenMax.to("#highlights", 1, {width: "100%", ease: Linear.easeNone});
-        var scene = new ScrollMagic.Scene({
-            triggerElement: "#highlights-target",
-            triggerHook: 0.3,
-            duration: 200
-        }).setTween(tween).setPin("#highlights-target", {pushFollowers: true}).addTo(controller);
+        // check screen size for animation rendering
+        var mq = window.matchMedia( "(min-width: 480px)" );
+
+        if (mq.matches) {
+            var controller = new ScrollMagic.Controller();
+
+            // HIGHLIGHTS animation
+            var highlightsTween = TweenMax.to("#highlights", 1, {width: "100%", ease: Linear.easeNone});
+            var highlightsScene = new ScrollMagic.Scene({
+                triggerElement: "#highlights-target",
+                triggerHook: 0.3,
+                duration: 200
+            }).setTween(highlightsTween).setPin("#highlights-target", {pushFollowers: true}).addTo(controller);
+
+            // SKILLS animation
+            var skillsTween = TweenMax.to(".skills", 1, {width: "100%", height: "100%", opacity: 1, ease: Linear.easeNone});
+            var skillsScene = new ScrollMagic.Scene({
+                triggerElement: "#skills-target",
+                triggerHook: 0.05,
+                duration: 200
+            }).setTween(skillsTween).setPin("#skills-target", {pushFollowers: true}).addTo(controller);
+
+            $('.project-img').each(function(index, target) {
+                var height = target.parentElement.children[1].clientHeight;
+                var marginTop = '-' + height + 'px';
+                target.children[0].style.marginTop = marginTop;
+            })
+            $('.info').attr('opacity', 0);
+            $('.project-title').on('mouseenter', function(e) {
+                console.log(e.currentTarget.parentElement.children[2]);
+                e.currentTarget.parentElement.children[2].children[0].classList.add('open-img');
+                e.currentTarget.parentElement.children[1].style.opacity = 1;
+            })
+        }
     });
 
     </script>
