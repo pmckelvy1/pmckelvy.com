@@ -379,6 +379,13 @@ hr.small {
   margin: auto;
 }
 
+.aa-school-info {
+    list-style-type: disc;
+    text-align: left;
+    font-size: 18px;
+    padding: 30px 80px;
+}
+
 .school-title {
   font-size: 24px;
   padding: 5px;
