@@ -19,9 +19,19 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='css/devicons.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
+
+    <!-- ScrollMagic -->
+    <script src="js/vendor/TweenMax.min.js"></script>
+    <script src="js/vendor/ScrollMagic.js"></script>
+    <script src="js/vendor/plugins/animation.gsap.js"></script>
+
+    <!-- GSAP -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -69,7 +79,7 @@
       <header id="top" class="header">
         <div class="text-vertical-center">
           <h1>Patrick McKelvy</h1>
-          <h3>Web Software Developer</h3>
+          <h3>Software Engineer</h3>
           <br>
           <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
         </div>
@@ -82,12 +92,15 @@
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 text-center"></div>
-                <div class="col-lg-6 text-center">
-                    <h2></h2>
-                    <p class="lead">Patrick McKelvy is a software developer, specializing in RESTful web applications.  He has experience designing and implementing sleek user interfaces with with HTML, CSS, Javascript, and React, and robust backend databases using Ruby on Rails.  Have a look at his skillset and accomplishments below!</p>
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8">
+                    <div id="highlights">
+                        <div id="highlight-1" class="fa fa-circle"><div class="inner-text"><div class="text-cell">Sleek UI's</div></div></div>
+                        <div id="highlight-2" class="fa fa-circle"><div class="inner-text"><div class="text-cell">Robust Backend Infrastructure</div></div></div>
+                        <div id="highlight-3" class="fa fa-circle"><div class="inner-text"><div class="text-cell">Machine Learning (coming soon...)</div></div></div>
+                    </div>
                 </div>
-                <div class="col-lg-3 text-center"></div>
+                <div class="col-xs-2"></div>
             </div>
             <!-- /.row -->
         </div>
@@ -104,27 +117,31 @@
                     <div class="row">
                         <div class="col-md-12 project">
                             <div class="portfolio-item">
-                              <div class="project-title">
-                                CloudSounds
-                                <div class="github-link">
+                              <div class="project-title clearfix">
+                                <div class="pull-left">
+                                      CloudSounds
+                                </div>
+                                <div class="github-link pull-right">
                                   <a target="_blank" href="https://github.com/pmckelvy1/CloudSounds">
                                     <span class="devicons devicons-github_badge"></span>
                                   </a>
                                 </div>
                               </div>
                               <p class="info">
-                                CloudSounds is a music sharing and discovery platform based on the popular website SoundCloud.com, built on Ruby on Rails and React.js with Flux.  Users can create and customize a profile, upload and share their music, search for and follow other users, create playlists, and like and comment on music they find across the site.
+                                CloudSounds is a music sharing and discovery platform based on the popular website SoundCloud.com, built on Ruby on Rails and React with Flux.  Users can create and customize a profile, upload and share their music, search for and follow other users, create playlists, and like and comment on music they find across the site.
                               </p>
                                 <a target="_blank" href="http://www.cloudsounds.cloud">
-                                    <img class="img-portfolio img-responsive" src="img/user-prof-ss.jpg">
+                                  <img class="img-portfolio img-responsive" src="img/user-prof-ss.jpg">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-12 project">
                             <div class="portfolio-item">
-                              <div class="project-title">
-                                PartyTetris
-                                <div class="github-link">
+                              <div class="project-title clearfix">
+                                <div class="pull-left">
+                                    PartyTetris
+                                </div>
+                                <div class="github-link pull-right">
                                   <a target="_blank" href="https://github.com/pmckelvy1/PartyTetris">
                                     <span class="devicons devicons-github_badge"></span>
                                   </a>
@@ -140,9 +157,11 @@
                         </div>
                         <div class="col-md-12 project">
                             <div class="portfolio-item">
-                              <div class="project-title">
-                                jQueryLite
-                                <div class="github-link">
+                              <div class="project-title clearfix">
+                                  <div class="pull-left">
+                                      jQueryLite
+                                  </div>
+                                <div class="github-link pull-right">
                                   <a target="_blank" href="https://github.com/pmckelvy1/jQueryLite">
                                     <span class="devicons devicons-github_badge"></span>
                                   </a>
@@ -158,9 +177,11 @@
                         </div>
                         <div class="col-md-12 project">
                             <div class="portfolio-item">
-                              <div class="project-title">
-                                Chess
-                                <div class="github-link">
+                              <div class="project-title clearfix">
+                                <div class="pull-left">
+                                    Chess
+                                </div>
+                                <div class="github-link pull-right">
                                   <a target="_blank" href="https://github.com/pmckelvy1/chess">
                                     <span class="devicons devicons-github_badge"></span>
                                   </a>
@@ -211,9 +232,9 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span class="icon devicons devicons-postgresql"></span>
+                                <span class="icon devicons devicons-python"></span>
                                 <h4>
-                                    <strong>Postgres</strong>
+                                    <strong>Python</strong>
                                 </h4>
                             </div>
                         </div>
@@ -238,9 +259,9 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span class="icon devicons devicons-jquery"></span>
+                                <span class="icon devicon-jasmine-plain"></span>
                                 <h4>
-                                    <strong>jQuery</strong>
+                                    <strong>Jasmine</strong>
                                 </h4>
                             </div>
                         </div>
@@ -281,17 +302,17 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span class="icon devicons devicons-github_badge"></span>
+                                <span class="icon devicon-cplusplus-plain"></span>
                                 <h4>
-                                    <strong>Git</strong>
+                                    <strong>C++</strong>
                                 </h4>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span class="icon devicons devicons-heroku"></span>
+                                <span class="icon devicons devicons-postgresql"></span>
                                 <h4>
-                                    <strong>Heroku</strong>
+                                    <strong>Postgres</strong>
                                 </h4>
                             </div>
                         </div>
@@ -315,20 +336,6 @@
                         <div class="col-md-12 project">
                             <div class="portfolio-item">
                               <div class="school-title">
-                                App Academy
-                              </div>
-                              <ul class="school-info">
-                                <li>Immersive web-development bootcamp</li>
-                                <li>&lt;3% acceptance rate</li>
-                                <li>In-depth study of underlying frameworks and libraries</li>
-                                <li>Focus on how to be a developer, not just how to program</li>
-                              </ul>
-                              <img class="img-education" src="img/aa-logo.png">
-                            </div>
-                        </div>
-                        <div class="col-md-12 project">
-                            <div class="portfolio-item">
-                              <div class="school-title">
                                 Tufts University
                               </div>
                               <ul class="school-info">
@@ -337,7 +344,39 @@
                                 <li><span class="bold blue">GPA:</span> 3.23</li>
                                 <li><span class="bold blue">Honors:</span> Cum Laude</li>
                               </ul>
-                              <img class="img-education" src="img/Tufts_University_seal.svg.png">
+                              <a target="_blank" href="https://www.tufts.edu/">
+                                  <img class="img-education" src="img/Tufts_University_seal.svg.png">
+                              </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 project">
+                            <div class="portfolio-item">
+                              <div class="school-title">
+                                App Academy
+                              </div>
+                              <ul class="school-info">
+                                <li>Immersive web-development bootcamp</li>
+                                <li>&lt;3% acceptance rate</li>
+                                <li>In-depth study of underlying frameworks and libraries</li>
+                                <li>Focus on how to be a developer, not just how to program</li>
+                              </ul>
+                              <a target="_blank" href="https://www.appacademy.io/">
+                                  <img class="img-education" src="img/aa-logo.png">
+                              </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 project">
+                            <div class="portfolio-item">
+                              <div class="school-title">
+                                Stanford University Machine Learning
+                              </div>
+                              <ul class="school-info">
+                                <li><span class="bold blue">Planned Completion:</span> July 2017</li>
+                                <li><span class="bold blue">Topics:</span> Linear &amp; Logistic Regression, Neural Networks, System Design, SVM's, Unsupervised Learning, Dimensionality Reduction, Anomoly Detection, Recommender Systems, Large Scale Machine Learning</li>
+                              </ul>
+                              <a target="_blank" href="https://www.coursera.org/learn/machine-learning">
+                                  <img class="img-education" src="img/machine-brain.png">
+                              </a>
                             </div>
                         </div>
                     </div>
@@ -356,12 +395,12 @@
                 <div class="col-lg-12 text-center">
                     <h2></h2>
                     <p class="music-blurb">
-                      Do you enjoy good music?  Patrick is a music producer and mix engineer, and when he isn't designing and building slick web apps, he is producing pop, electronic, and hip-hop music for a variety of acts.  Checkout some of his tracks below!
+                      When I'm not designing and building slick web apps, I'm producing electronic, pop, and hip-hop music for a variety of acts (under a few different names).  Here are some links to a few of my credits and releases!
                     </p>
                     <ul class="tracks">
-                    <li class="track"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189283535&amp;color=5e50de&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></li>
-                    <li class="track"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/200701911&amp;color=5e50de&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></li>
-                    <li class="track"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/243410808&amp;color=5e50de&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></li>
+                    <li class="track"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/200701911&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></li>
+                    <li class="track"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/282668827&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></li>
+                    <li class="track"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/321199843&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></li>
                   </ul>
                 </div>
             </div>
@@ -376,7 +415,6 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <a target="_blank" href="img/PatrickMcKelvyResume2.pdf" class="btn btn-lg btn-light">Patrick's Resume</a>
-                    <h3>Feel free to send Patrick an email!</h3>
                 </div>
                 <div class="col-lg-12 text-center">
                   <form class="email-form" action="http://formspree.io/pmckelvy1@gmail.com"
@@ -453,7 +491,15 @@
                 }
             }
         });
+
+        var controller = new ScrollMagic.Controller();
+        var tween = TweenMax.to("#highlights", 1, {width: "100%", ease: Linear.easeNone});
+        var scene = new ScrollMagic.Scene({
+            triggerElement: "#highlights",
+            duration: 200
+        }).setTween(tween).addTo(controller);
     });
+
     </script>
 
 </body>
