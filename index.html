@@ -91,7 +91,7 @@
     <!-- About -->
     <section id="about" class="about">
         <div class="container">
-            <div class="row">
+            <div id="highlights-target" class="row">
                 <div class="col-xs-2"></div>
                 <div class="col-xs-8">
                     <div id="highlights">
@@ -495,9 +495,10 @@
         var controller = new ScrollMagic.Controller();
         var tween = TweenMax.to("#highlights", 1, {width: "100%", ease: Linear.easeNone});
         var scene = new ScrollMagic.Scene({
-            triggerElement: "#highlights",
+            triggerElement: "#highlights-target",
+            triggerHook: 0.3,
             duration: 200
-        }).setTween(tween).addTo(controller);
+        }).setTween(tween).setPin("#highlights-target", {pushFollowers: true}).addTo(controller);
     });
 
     </script>
