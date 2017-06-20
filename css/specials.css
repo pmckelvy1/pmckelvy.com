@@ -1,0 +1,147 @@
+.title-flash_cloudsounds {
+    animation-name: flash_cloudsounds;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flash_cloudsounds {
+    0% {
+        color: inherit;
+        font-size: inherit;
+    }
+    30% {
+        color: inherit;
+        font-size: inherit;
+    }
+    40% {
+        color: #0bf;
+        font-size: 25px;
+    }
+    50% {
+        color: inherit;
+        font-size: inherit;
+    }
+    60% {
+        color: #0bf;
+        font-size: 25px;
+    }
+    70% {
+        color: inherit;
+        font-size: inherit;
+    }
+    100% {
+        color: inherit;
+        font-size: inherit;
+    }
+}
+
+.title-flash_tetris {
+    animation-name: flash_tetris;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flash_tetris {
+    0% {
+        color: inherit;
+        font-size: inherit;
+    }
+    30% {
+        color: inherit;
+        font-size: inherit;
+    }
+    40% {
+        color: #F86ED0;
+        font-size: 25px;
+    }
+    50% {
+        color: inherit;
+        font-size: inherit;
+    }
+    60% {
+        color: #F86ED0;
+        font-size: 25px;
+    }
+    70% {
+        color: inherit;
+        font-size: inherit;
+    }
+    100% {
+        color: inherit;
+        font-size: inherit;
+    }
+}
+
+.title-flash_jquerylite {
+    animation-name: flash_jquerylite;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flash_jquerylite {
+    0% {
+        color: inherit;
+        font-size: inherit;
+    }
+    30% {
+        color: inherit;
+        font-size: inherit;
+    }
+    40% {
+        color: #E6C085;
+        font-size: 25px;
+    }
+    50% {
+        color: inherit;
+        font-size: inherit;
+    }
+    60% {
+        color: #E6C085;
+        font-size: 25px;
+    }
+    70% {
+        color: inherit;
+        font-size: inherit;
+    }
+    100% {
+        color: inherit;
+        font-size: inherit;
+    }
+}
+
+.title-flash_chess {
+    animation-name: flash_chess;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flash_chess {
+    0% {
+        color: inherit;
+        font-size: inherit;
+    }
+    30% {
+        color: inherit;
+        font-size: inherit;
+    }
+    40% {
+        color: #3BFD35;
+        font-size: 25px;
+    }
+    50% {
+        color: inherit;
+        font-size: inherit;
+    }
+    60% {
+        color: #3BFD35;
+        font-size: 25px;
+    }
+    70% {
+        color: inherit;
+        font-size: inherit;
+    }
+    100% {
+        color: inherit;
+        font-size: inherit;
+    }
+}

@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/specials.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -117,8 +118,8 @@
                     <div class="row">
                         <div class="col-md-12 project">
                             <div class="portfolio-item">
-                              <div class="project-title clearfix">
-                                <div class="pull-left">
+                              <div id="project-title_cloudsounds" class="project-title clearfix">
+                                <div class="pull-left title-flash_cloudsounds">
                                       CloudSounds
                                 </div>
                                 <div class="github-link pull-right">
@@ -137,8 +138,8 @@
                         </div>
                         <div class="col-md-12 project">
                             <div class="portfolio-item">
-                              <div class="project-title clearfix">
-                                <div class="pull-left">
+                              <div id="project-title_tetris" class="project-title clearfix">
+                                <div class="pull-left title-flash_tetris">
                                     PartyTetris
                                 </div>
                                 <div class="github-link pull-right">
@@ -157,8 +158,8 @@
                         </div>
                         <div class="col-md-12 project">
                             <div class="portfolio-item">
-                              <div class="project-title clearfix">
-                                  <div class="pull-left">
+                              <div id="project-title_jquerylite" class="project-title clearfix">
+                                  <div class="pull-left title-flash_jquerylite">
                                       jQueryLite
                                   </div>
                                 <div class="github-link pull-right">
@@ -177,8 +178,8 @@
                         </div>
                         <div class="col-md-12 project">
                             <div class="portfolio-item">
-                              <div class="project-title clearfix">
-                                <div class="pull-left">
+                              <div id="project-title_chess" class="project-title clearfix">
+                                <div class="pull-left title-flash_chess">
                                     Chess
                                 </div>
                                 <div class="github-link pull-right">
@@ -494,16 +495,44 @@
                 duration: 200
             }).setTween(skillsTween).setPin("#skills-target", {pushFollowers: true}).addTo(controller);
 
+            var tweenOptions = {
+                // boxShadow: "inset 0px -27px 37px -20px #0bf",
+                color: "#0bf",
+                fontSize: "30px",
+                ease: Linear.easeNone,
+                repeat: 3,
+                yoyo: true
+            }
+
             $('.project-img').each(function(index, target) {
                 var height = target.parentElement.children[1].clientHeight;
                 var marginTop = '-' + height + 'px';
                 target.children[0].style.marginTop = marginTop;
             })
             $('.info').attr('opacity', 0);
-            $('.project-title').on('mouseenter', function(e) {
-                console.log(e.currentTarget.parentElement.children[2]);
+
+            $('#project-title_cloudsounds').on('mouseenter', function(e) {
                 e.currentTarget.parentElement.children[2].children[0].classList.add('open-img');
                 e.currentTarget.parentElement.children[1].style.opacity = 1;
+                e.currentTarget.children[0].classList.remove("title-flash_cloudsounds");
+            })
+
+            $('#project-title_tetris').on('mouseenter', function(e) {
+                e.currentTarget.parentElement.children[2].children[0].classList.add('open-img');
+                e.currentTarget.parentElement.children[1].style.opacity = 1;
+                e.currentTarget.children[0].classList.remove("title-flash_tetris");
+            })
+
+            $('#project-title_jquerylite').on('mouseenter', function(e) {
+                e.currentTarget.parentElement.children[2].children[0].classList.add('open-img');
+                e.currentTarget.parentElement.children[1].style.opacity = 1;
+                e.currentTarget.children[0].classList.remove("title-flash_jquerylite");
+            })
+
+            $('#project-title_chess').on('mouseenter', function(e) {
+                e.currentTarget.parentElement.children[2].children[0].classList.add('open-img');
+                e.currentTarget.parentElement.children[1].style.opacity = 1;
+                e.currentTarget.children[0].classList.remove("title-flash_chess");
             })
         }
     });

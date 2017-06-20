@@ -435,6 +435,7 @@ hr.small {
   border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
   position: relative;
+  background-color: rgba(256, 256, 256, 0);
 }
 
 .github-link {
